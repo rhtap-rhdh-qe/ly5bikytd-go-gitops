@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ly5bikytd-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ly5bikytd-go 
+  name: ly5bikytd-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ly5bikytd-go 
